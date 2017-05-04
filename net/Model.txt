@@ -1,0 +1,2 @@
+You can obtain the network weigths at:
+http://157.253.63.7/fcn_alexnet.caffemodel
