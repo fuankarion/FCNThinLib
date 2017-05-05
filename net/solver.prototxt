@@ -1,16 +1,26 @@
+#Number if iterations on test phase
 test_iter: 32
+#Number if iterations on train phase
 test_interval: 294
 base_lr: 0.001
+#Console output every N-th iteration (Train Only)
 display: 36
+#Total number of iterations for train process
 max_iter: 8820
 lr_policy: "multistep"
+stepvalue: 4410
+stepvalue: 7497
+#The current learning rate is multiplied by 'gamma' at every step
 gamma: 0.5
 momentum: 0.9
 weight_decay: 0.0001
+#Store model weigths every 224 iterations (Train Only)
 snapshot: 294
 snapshot_prefix: "snapshot"
+#Enable GPU 
 solver_mode: GPU
+#Network descriptor
 net: "/home/jcleon/Storage/disk0/weizmann_horse_db/pycaffe/net/trainVal.prototxt"
+#Solver type
 solver_type: SGD
-stepvalue: 4410
-stepvalue: 7497
+
